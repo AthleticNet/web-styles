@@ -19,7 +19,10 @@ Source: https://docs.github.com/en/packages/guides/configuring-npm-for-use-with-
 
 ## Usage
 - In a Webpack project (like Angular), you can then add `@import "~@athleticnet/web-styles/7.3/site-dependencies.scss";` to use the SCSS variables and mixins supplied in this package.
-- In Visual Studio, ...
+- In Visual Studio, you can then replace: `@import "../../Shared/styles/Athletic7.3/site-dependencies";` with `@import "../../node_modules/@athleticnet/web-styles/7.3/site-dependencies";` Currently $test-red and $test-blue are variable available for testing
+
+## TODO 
+- move all styles into web-styles repo and then update paths to Athletic[6-7].3.css and site-dependences from Visual Studio
 
 ### Possible solutions to sharing styles across repos
 1. Publish to NPM would make for easier package install, but that makes it harder to publish as each package editor must be authenticated with NPMJS.org (would require making a team organization...). 
