@@ -1,0 +1,19 @@
+{
+  "name": "web-styles",
+  "version": "1.0.0",
+  "description": "Test of using Athletic7.3.scss in a package for usage on AthleticNet and anet-angular repos",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AthleticNet/web-styles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AthleticNet/web-styles/issues"
+  },
+  "homepage": "https://github.com/AthleticNet/web-styles#readme"
+}
