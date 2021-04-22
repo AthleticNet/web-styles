@@ -1,5 +1,5 @@
 {
-  "name": "web-styles",
+  "name": "@athleticnet/web-styles",
   "version": "1.0.0",
   "description": "Test of using Athletic7.3.scss in a package for usage on AthleticNet and anet-angular repos",
   "scripts": {
