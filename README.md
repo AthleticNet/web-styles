@@ -17,5 +17,11 @@ $ npm login --scope=@athleticnet --registry=https://npm.pkg.github.com
 ```
 Source: https://docs.github.com/en/packages/guides/configuring-npm-for-use-with-github-packages#authenticating-with-a-personal-access-token
 
-### Alternatives
-Could publish to NPM for easier package install, but that makes it harder to publish. GitHub packages makes the automatic publish easier as anyone with access to the AthleticNet org can publish, whereas NPM makes the consumption easier.
+## Usage
+- In a Webpack project (like Angular), you can then add `@import "~@athleticnet/web-styles/7.3/site-dependencies.scss";` to use the SCSS variables and mixins supplied in this package.
+- In Visual Studio, ...
+
+### Possible solutions to sharing styles across repos
+1. Publish to NPM would make for easier package install, but that makes it harder to publish as each package editor must be authenticated with NPMJS.org (would require making a team organization...). 
+2. GitHub packages requires a 1-time authentication with the Github package registry per user, but makes the automatic publish easier as anyone with access to the AthleticNet org can publish by simply creating a new release on GitHub.
+3. Continue installing repositories side-by-side, but that leaves our issue of automatic deployments via GitHub actions unsolved
