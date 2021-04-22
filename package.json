@@ -1,6 +1,6 @@
 {
   "name": "@athleticnet/web-styles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test of using Athletic7.3.scss in a package for usage on AthleticNet and anet-angular repos",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
