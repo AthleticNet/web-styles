@@ -1,10 +1,18 @@
 {
   "name": "@athleticnet/web-styles",
-  "version": "1.0.1",
-  "description": "Test of using Athletic7.3.scss in a package for usage on AthleticNet and anet-angular repos",
+  "version": "1.0.2",
+  "description": "Shared styles for AthleticNet and anet-angular repos",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run compile && npm run autoprefix && npm run minify",
+    "compile": "sass Athletic7.3/Athletic7.3.scss:dist/Athletic7.3.css --no-source-map",
+    "autoprefix": "postcss dist/Athletic7.3.css --replace --use autoprefixer --no-map",
+    "minify": "postcss dist/Athletic7.3.css --output dist/Athletic7.3.min.css --use cssnano --no-map"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie >= 11"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AthleticNet/web-styles.git"
@@ -15,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/AthleticNet/web-styles/issues"
   },
-  "homepage": "https://github.com/AthleticNet/web-styles#readme"
+  "homepage": "https://github.com/AthleticNet/web-styles#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.12"
+  }
 }
