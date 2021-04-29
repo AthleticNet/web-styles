@@ -1,6 +1,7 @@
-# web-styles
-Test of using Athletic7.3.scss in a package for usage on AthleticNet and anet-angular repos
+# Athletic Styles
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AthleticNet/web-styles)
 
+Use Athletic7.3.scss in a package for usage on AthleticNet and anet-angular repos
 ## Installing
 
 1. Add `@athleticnet:registry=https://npm.pkg.github.com` to the repo's .npmrc file 
