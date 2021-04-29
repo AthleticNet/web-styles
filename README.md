@@ -10,10 +10,11 @@ Shared Bootstrap 4 + in-house styles for AthleticNet and anet-angular repos
 `@import "../../Shared/styles/Athletic7.3/site-dependencies";`
 `@import "../../node_modules/@athletic/web-styles/Athletic7.3/site-dependencies";` 
 
-## TODO 
-- update paths to Athletic[6-7].3.css and site-dependences from both repos
 
 ## Updating
 
-1. Make changes and commit
-2. Run `npm version patch` and commit, this will automatically fire off an NPM publish
+1. Make changes, run `npm run build`, compare the diffs in the outputted css, then commit
+2. Run `npm run patch` (this will bump from 1.0.2 to 1.0.3 for example and then commit the changes), and push changes to GitHub which will automatically fire off an NPM publish
+
+## TODO 
+- update paths to Athletic[6-7].3.css and site-dependences from both repos

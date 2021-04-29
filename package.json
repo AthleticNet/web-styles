@@ -1,12 +1,13 @@
 {
   "name": "@athleticnet/web-styles",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Shared styles for AthleticNet and anet-angular repos",
   "scripts": {
     "build": "npm run compile && npm run autoprefix && npm run minify",
     "compile": "sass Athletic7.3/Athletic7.3.scss:dist/Athletic7.3.css --no-source-map",
     "autoprefix": "postcss dist/Athletic7.3.css --replace --use autoprefixer --no-map",
-    "minify": "postcss dist/Athletic7.3.css --output dist/Athletic7.3.min.css --use cssnano --no-map"
+    "minify": "postcss dist/Athletic7.3.css --output dist/Athletic7.3.min.css --use cssnano --no-map",
+    "patch": "npm version patch"
   },
   "browserslist": [
     "> 1%",

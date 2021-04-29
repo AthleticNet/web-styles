@@ -1,26 +1,30 @@
-name: Release Package
-
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
-  publish-gpr:
+  publish:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          node-version: 10
+      
+      # Not automatically building so we have a chance to compare the diffs before deploying
+      # - run: npm install
+      # - run: npm build
+      
+      - id: publish
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: "public"
 
-# Ref:
-# 
-# https://github.com/sveltejs/kit/blob/master/.github/workflows/release.yml
+      - name: Send notification to CSS channel in Teams
+        if: steps.publish.outputs.type != 'none'
+        uses: dhollerbach/github-action-send-message-to-ms-teams@1.0.10
+        with:
+          webhook: ${{ secrets.TEAMS_CSS_CHANNEL_WEBHOOK }}
+          message: "web-styles version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
