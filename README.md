@@ -1,15 +1,14 @@
 # Athletic Styles
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AthleticNet/web-styles)
-
 Shared Bootstrap 4 + in-house styles for AthleticNet and anet-angular repos
 
-## Usage
+## Usage of SCSS dependencies
 1. `npm install @athletic/web-styles`
-2.  - In a Webpack project (like Angular), you can then add `@import "~@athletic/web-styles/Athletic7.3/site-dependencies.scss";` to use the SCSS variables and mixins supplied in this package.
-    - In Visual Studio, you can then switch from the Shared/styles folder to the package in node_modules doing a find replace that keep the same number of "../": 
-`@import "../../Shared/styles/Athletic7.3/site-dependencies";`
-`@import "../../node_modules/@athletic/web-styles/Athletic7.3/site-dependencies";` 
+2.  - In a Webpack project (like Angular), add `@import "~@athletic/web-styles/Athletic7.3/_site-dependencies.scss";` to use the SCSS variables and mixins supplied in this package.
+    - In Visual Studio, use a relative path to the package in `node_modules/@athletic/web-styles/Athletic7.3/site-dependencies` which could end you up with an import like `@import "../../node_modules/@athletic/web-styles/Athletic7.3/site-dependencies";`
 
+## Usage of compiled styles
+1. `npm install @athletic/web-styles`
+2. Use `@athletic/web-styles/dist/Athletic7.3.min.css`
 
 ## Updating
 
@@ -17,4 +16,8 @@ Shared Bootstrap 4 + in-house styles for AthleticNet and anet-angular repos
 2. Run `npm run patch` (this will bump from 1.0.2 to 1.0.3 for example and then commit the changes), and push changes to GitHub which will automatically fire off an NPM publish
 
 ## TODO 
-- update paths to Athletic[6-7].3.css and site-dependences from both repos
+- update AthleticNet project file
+- use Athletic7.3.APP.scss in app
+- Discuss if we want to authorize Gitpod w/ AthleticNet organization if wanting to do easy devving via Gitpod
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AthleticNet/web-styles)

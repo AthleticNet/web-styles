@@ -2,8 +2,6 @@
 # Learn more about this Gitpod configuration file in the documentation at https://www.gitpod.io/docs/configuration
 #
 ports:
-  - port: 24678
-    onOpen: ignore
   - port: 3000
     onOpen: notify 
     # open-preview or open-browser
@@ -11,7 +9,7 @@ ports:
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks
 tasks:
   - init: npm install
-    # command: npm run dev
+    # command: npm run _____ # no initial command needed, but could be utilized if setting up a styles preview page
 
 github:
   prebuilds:
