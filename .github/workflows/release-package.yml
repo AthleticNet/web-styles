@@ -20,3 +20,7 @@ jobs:
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+# Ref:
+# 
+# https://github.com/sveltejs/kit/blob/master/.github/workflows/release.yml
