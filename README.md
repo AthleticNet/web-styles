@@ -17,7 +17,6 @@ Shared Bootstrap 4 + in-house styles for AthleticNet and anet-angular repos
 
 ## TODO 
 - update AthleticNet project file
-- use Athletic7.3.APP.scss in app
 - Discuss if we want to authorize Gitpod w/ AthleticNet organization if wanting to do easy devving via Gitpod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AthleticNet/web-styles)
