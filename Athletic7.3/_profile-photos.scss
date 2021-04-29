@@ -1,0 +1,66 @@
+﻿
+.photo-user {
+    display: inline-block;
+
+    .no-photo-container, img {
+        border-radius: 50%;
+    }
+
+    .no-photo-container, .fa-plus {
+        display: none;
+    }
+
+    &.can-update {
+        cursor: pointer;
+
+        &:hover {
+            .fa-user {
+                display: none;
+            }
+
+            .fa-plus {
+                display: inline-block;
+            }
+        }
+    }
+
+    &.no-photo {
+
+        .no-photo-container {
+            color: #fff;
+            display: inline-block;
+            background: gray;
+        }
+    }
+}
+
+.team-mascot {
+    display: inline-block;
+
+    .no-photo-container, .fa-plus {
+        display: none;
+    }
+
+    &.can-update {
+        cursor: pointer;
+
+        &:hover {
+            .add-mascot {
+                display: none;
+            }
+
+            .fa-plus {
+                display: inline-block;
+            }
+        }
+    }
+
+
+    &.no-photo {
+        .no-photo-container {
+            display: inline-block;
+            background: #e4e4e4;
+            border: 1px dashed gray;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+﻿
+@import "variables-anet"; //ANET non-color variables - May need updated w/ change to Bootstrap 4  //Bootstrap variable overrides go here also.
+// Note that the SCSS compiler takes the value of the first time it sees a variable, not the last, excepting when the !default flag is used.
+@import "color-variables"; //ANET custom color variables
+@import "mixins";
+
+@import "bootstrap-4.5.3/functions";
+@import "bootstrap-4.5.3/variables";
+@import "bootstrap-4.5.3/mixins";
+
+// Backwards Compatibility for pages referencing the old 7.0 Site Dependencies which rested on Bootstrap 4 alpha variables
+$table-bg-accent: $table-accent-bg;
+$state-success-text: #3c763d;
+$cursor-disabled: not-allowed !default;

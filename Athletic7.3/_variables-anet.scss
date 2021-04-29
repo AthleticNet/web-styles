@@ -1,0 +1,37 @@
+﻿// Athletic.net Variables
+$header-height: 56px !default;
+$anet-bg: #ededed;
+$side-menu-width: 240px;
+$dashboard-max-width: 900px;
+$pin-side-menu-min-width: $side-menu-width + $dashboard-max-width; // Used on Dashboard only at present
+
+
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+$link-color: #8B0000; //$brand-primary !default
+
+$container-max-widths: (
+  sm: 560px,
+  md: 752px,
+  lg: 976px,
+  xl: 1184px
+); //Defaults are 540, 720, 960, 1140
+
+$grid-gutter-width:    14px; // 30px !default
+$grid-gutter-width-base: 14px; // For Athletic7.0 version of Bootstrap
+
+$border-radius:          .17rem; //.25rem !default
+$border-radius-lg:       .2rem;  //.3rem !default
+$border-radius-sm:       .13rem; //.2rem !default
+
+$input-placeholder-color: #999;
+$input-color-placeholder: #999; // For Athletic7.0 version of Bootstrap
+
+$table-cell-padding-sm: 2px;
+$table-sm-cell-padding: 2px; // For Athletic7.0 version of Bootstrap
+
+
+//$font-family-sans-serif:  Verdana, Helvetica, Arial, sans-serif;
+//$font-size-base: 14px; // Instead of 16px to mesh with Bootstrap 3 for the moment.

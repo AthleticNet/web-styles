@@ -1,0 +1,210 @@
+﻿#body { // Use ID to avoids conflicts with elements which also have a <body> such as Prepsportswear iframe
+    padding-top: $header-height;
+    background-color: $anet-bg;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+
+    @media (max-width: 575px) {
+        padding-bottom: $header-height + 6px;
+    }
+
+
+    @media screen and (orientation:landscape) {
+        padding-bottom: 0 !important;
+    }
+
+    @media print {
+        display: block;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+#anetFooter {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+}
+
+#anetMain {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+
+    @media print {
+        display: block !important;
+    }
+}
+
+// Page Container
+#p_Container {
+    margin-bottom: 7px;
+
+    @media print {
+        padding: 0;
+        border: none;
+    }
+}
+
+
+// Sport Icons
+
+.sportIcon { // Example use: <span class="sportIcon TF"></span>
+    &::after {
+        font-size: 19px;
+        font-weight: bold;
+        font-style: italic;
+        vertical-align: -2px;
+        line-height: 6px;
+    }
+
+    &.small::after {
+        font-size: 15px;
+        vertical-align: 0;
+    }
+
+    &.TF::after {
+        content: "TF";
+        color: $anet-tf-light;
+    }
+
+    &.XC::after {
+        content: "XC";
+        color: $anet-xc-light;
+    }
+
+    &.RR::after {
+        content: "RR";
+        color: $anet-rr-light;
+    }
+}
+
+// Font
+
+.b { //consider also using .font-weight-bold (bootstrap 4)
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.has-video, .has-photo {
+    @media print {
+        display: none;
+    }
+}
+
+// MISC
+
+.truncate { /*Only works if width is set on element (ex: width:100%)*/
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.pointer, a, .cursor, [data-toggle="popover"], [data-toggle="tooltip"] { //.cursor is deprecated, use .pointer instead
+    cursor: pointer;
+}
+
+.wind {
+    font-size: 72%;
+    color: #333;
+
+    &.invalid {
+        color: red;
+    }
+}
+
+.divider-line { //placed between Team header and page content
+    margin: 7px -7px 12px;
+    border-top: 1px solid rgb(214, 214, 214);
+
+    @media print {
+        display: none;
+    }
+}
+
+.word-divider { //Used on Log In page and elsewhere
+    border-bottom: 1px solid #d9dadc;
+    display: block;
+    line-height: 1px;
+    margin: 25px 0;
+    position: relative;
+    text-align: center;
+
+    span {
+        background: #fff;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 0 15px;
+        font-weight: bold;
+        vertical-align: 2px;
+    }
+}
+
+.word-divider-graybg { //for use on gray site backgrounds
+    @extend .word-divider;
+    border-color: #a8a8a8;
+
+    span {
+        background: $anet-bg;
+    }
+}
+
+.img-shadow-border {
+    width: 100%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px #888;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+
+//Hide Angular before compile (as well as from incompatible browsers) - https://docs.angularjs.org/api/ng/directive/ngCloak
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+//ANET MODS
+// addThis Mod
+
+.at4m-dock a { // Change the addThis mobile sharing bottom fixed bar into a floating bottom-right action button
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 0 12px;
+    border: 1px solid rgb(203, 203, 203);
+    box-shadow: 1px 1px 1px rgb(226, 226, 226);
+    width: 95px !important;
+}
+
+.at4m-dock-toggle {
+    display: none;
+}
+
+.at-share-dock-outer {
+    @media print {
+        display: none;
+    }
+}

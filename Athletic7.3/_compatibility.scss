@@ -1,0 +1,11 @@
+﻿// show dropdown menus of header and side menu
+.open .dropdown-menu {
+    display: block; 
+}
+
+// allows <a> elements used as buttons to keep inheriting XC or TF colors
+// Upgrade from Bootstrap 4.1 to 4.5 broke, as seen in the accordion on https://www.athletic.net/edit/crosscountry/managemeet/manage/2647632/settings/template
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}

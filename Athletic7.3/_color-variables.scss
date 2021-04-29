@@ -1,0 +1,26 @@
+﻿
+//Anet Color Variables
+$anet-primary:          #770400;
+$anet-primary-light:    lighten($anet-primary, 9.6%); //#A80500
+$anet-primary-dark:     darken($anet-primary, 6.9%); //#540800
+
+$anet-tf:               #31537a;
+$anet-tf-light:         lighten($anet-tf, 9.6%); //#3f6b9d
+$anet-tf-dark:          darken($anet-tf, 6.9%); //#274261
+
+$anet-xc:               #374f3f;
+$anet-xc-light:         lighten($anet-xc, 9.6%); //#4b6c56
+$anet-xc-dark:          darken($anet-xc, 6.9%); //#033515
+
+
+//Anet Road Race Color - in development: Purple or orange preference with turquoise, violet, or brown as other options. 
+//$anet-rr:               #AA4311; //Orange option
+$anet-rr:               #59415e !default; // Came from lighten(#4b374f, 5%)     //Other purple options: #67496d; #782ab5; #4f4d37;
+$anet-rr-light:         lighten($anet-rr, 9.6%); //#_____
+$anet-rr-dark:          darken($anet-rr, 6.9%); //#_____
+
+//Admin
+$anet-admin:        #a70950;
+$anet-admin-dark:   darken($anet-admin, 6.9%);
+
+$fb-color: #4267b2;

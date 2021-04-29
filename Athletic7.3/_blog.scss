@@ -1,0 +1,37 @@
+﻿.blog_toc {
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+    border-radius: 4px;
+
+    > ul > li > a {
+        padding: 3px 5px;
+
+        &:hover, &:focus {
+            background-color: #d1d1d1;
+        }
+    }
+}
+
+.blog_post-drag {
+    cursor: move;
+    display: none;
+}
+
+.blog_show-drag .blog_post-drag {
+    display: inline-block;
+}
+
+.blog_post-title {
+    margin-right: 35px;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.blog_fixedHeight {
+    max-height: 200px; /* override in page if desired*/
+    overflow: auto;
+}
+
+.blog_fixedHeight.expand {
+    max-height: none;
+}

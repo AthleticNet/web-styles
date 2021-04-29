@@ -1,0 +1,72 @@
+﻿//Status Colors
+.official-result {
+    color: rgb(23, 202, 23);
+}
+
+.unofficial-result {
+    color: rgb(250, 79, 79);
+}
+
+// Text Colors
+@include text-emphasis-variant('.text-anet, .text-sport', $anet-primary);
+@include text-emphasis-variant('.text-tf, .TF .text-sport', $anet-tf);
+@include text-emphasis-variant('.text-xc, .XC .text-sport', $anet-xc);
+@include text-emphasis-variant('.text-rr, .RR .text-sport', $anet-rr);
+
+// Badge Colors
+.badge-tf, .TF .badge-sport {
+    @include badge-variant($anet-tf);
+}
+
+.badge-xc, .XC .badge-sport {
+    @include badge-variant($anet-xc);
+}
+
+.badge-rr, .RR .badge-sport {
+    @include badge-variant($anet-rr);
+}
+
+.badge-sport, .badge-anet {
+    @include badge-variant($anet-primary);
+}
+
+//  TF COLORS
+.TF {
+    h1, h2, h3, h4, h5, h6 {
+        color: $anet-tf-dark;
+    }
+}
+
+//  XC COLORS
+.XC {
+    h1, h2, h3, h4, h5, h6 {
+        color: $anet-xc-dark;
+    }
+}
+
+// RR Colors
+
+.RR {
+    h1, h2, h3, h4, h5, h6 {
+        color: $anet-rr-dark;
+    }
+}
+
+// Background Colors
+.bg-sport {
+    background-color: $anet-primary;
+}
+
+.TF .bg-sport, .bg-tf, .TF .progress-bar {
+    background-color: $anet-tf;
+}
+
+.XC .bg-sport, .bg-xc, .XC .progress-bar {
+    background-color: $anet-xc;
+}
+
+.RR .bg-sport, .bg-rr, .RR .progress-bar {
+    background-color: $anet-rr;
+}
+
+

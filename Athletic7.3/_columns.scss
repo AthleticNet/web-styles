@@ -1,0 +1,59 @@
+﻿
+.print-both-tabs { // Sets both Men and Women tab panes to 50% width for printing. Use in conjunction w/ Bootstrap print classes to show/hide the correct Titles.
+    @media print {
+        .tab-pane {
+            display: block !important;
+            width: 50% !important;
+            float: left !important;
+        }
+
+        .nav-tabs {
+            display: none;
+        }
+    }
+}
+
+
+.anet-2Column-tabs { // 2 Columns on desktop, Gender Tabs on mobile
+    @include media-breakpoint-up(lg) {
+        .tab-pane {
+            display: block;
+        }
+
+        .nav {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        h3 {
+            display: none;
+        }
+    }
+
+    @media print {
+        .tab-pane {
+            display: block;
+            width: 50%;
+            float: left;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        h3 {
+            display: block;
+        }
+    }
+}
+
+@media print {
+    @for $i from 1 through 12 { // To learn more about the @for directive: http://thesassway.com/intermediate/if-for-each-while
+        .col-print-#{$i} {
+            float: left;
+            width: percentage($i/12);
+            display: block !important;
+        }
+    }
+}

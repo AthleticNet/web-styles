@@ -1,0 +1,21 @@
+﻿.Ad, #ad_InPage_320, #ad_InPage_Box, #ld-9403-3955 { //the latter hides lockerdome ads
+    @media print {
+        display: none !important;
+    }
+}
+
+.Ad.Banner {
+    //margin: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    //width: 970px;
+    //max-width: 100%;
+    @media screen and (max-width: 766px) {
+        //width: 320px;
+    }
+
+    &.BTF {
+        padding-top: 0;
+    }
+}

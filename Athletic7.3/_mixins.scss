@@ -1,0 +1,54 @@
+﻿// Faded Gradient Background - used on Features titles overlaid on images.
+
+@mixin faded-gradient-h($gradient-color, $fade-point) {
+    background: $gradient-color;
+    // Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.42+25,0.42+75,0+100
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%,$gradient-color percentage($fade-point),$gradient-color percentage(1 - $fade-point), rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,$gradient-color percentage($fade-point),$gradient-color percentage(1 - $fade-point),rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,$gradient-color percentage($fade-point),$gradient-color percentage(1 - $fade-point),rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin faded-gradient-v($gradient-color, $fade-point) {
+    background: $gradient-color;
+    // Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.42+25,0.42+75,0+100
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%,$gradient-color percentage($fade-point),$gradient-color percentage(1 - $fade-point), rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,$gradient-color percentage($fade-point),$gradient-color percentage(1 - $fade-point),rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,$gradient-color percentage($fade-point),$gradient-color percentage(1 - $fade-point),rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin bg-image-cover($cover-color) {
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $cover-color;
+    }
+}
+
+
+//Mixins and variables - to stay only as long as transitioning from Bootstrap 3 to 4
+
+
+$screen-sm-min: 768px;
+$screen-md-min: 900px;
+$screen-lg-min: 1172px;
+
+
+
+@mixin min-width($screen-breakpoint: $screen-sm-min) { //$screen-sm-min is the default if no breakpoint is declared when mixin is called.
+    @media screen and (min-width: $screen-breakpoint) {
+        @content
+    }
+}
+
+@mixin max-width($screen-breakpoint: $screen-sm-min) { //$screen-sm-min is the default if no breakpoint is declared when mixin is called.
+    @media screen and (max-width: $screen-breakpoint - 1) { // Minus 1 so media queries don't overlap.
+        @content
+    }
+}

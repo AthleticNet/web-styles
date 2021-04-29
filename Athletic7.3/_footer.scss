@@ -1,0 +1,142 @@
+﻿#anetFooter {
+    background: $anet-primary-dark;
+    color: white;
+    font-size: 13px;
+    position: relative;
+
+    a {
+        color: rgba(255, 255, 255, 0.7);
+
+        @media print {
+            color: #000;
+        }
+    }
+
+    .btn-link {
+        @media all and (min-width:$screen-sm-min) {
+            padding-left: 0px
+        }
+    }
+
+    .white-button {
+        color: #292b2c !important;
+        background-color: #fff;
+        border-color: #ccc;
+
+        &:hover {
+            background-color: #e6e6e6;
+        }
+    }
+}
+
+.footer-top {
+    padding: 0 8px;
+
+    @media all and (max-width:$screen-sm-min) {
+        text-align: center;
+    }
+
+    ul {
+        margin: 7px 0 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        margin-bottom: 4px;
+    }
+}
+
+.footer-row-1 {
+    padding: 10px 0;
+    display: flex;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.32);
+}
+
+.footer-logo {
+    margin-right: auto;
+
+    @media all and (max-width:$screen-sm-min) {
+        display: none;
+    }
+}
+
+.footer-stats {
+    flex-grow: 1;
+
+    span {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    @media all and (min-width:$screen-sm-min) {
+        text-align: right;
+
+        div {
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+
+    #f_StatsHover {
+        display: none;
+    }
+
+    &:hover #f_StatsShowing {
+        display: none;
+    }
+
+    &:hover #f_StatsHover {
+        display: block;
+    }
+}
+
+.footer-row-2 {
+    display: flex;
+    flex-direction: column;
+
+    > div:first-child {
+        margin-bottom: 25px;
+    }
+
+    @media all and (min-width: $screen-sm-min) {
+        flex-direction: row;
+
+        > div {
+            flex-basis: 200px;
+            flex-grow: 1;
+
+            &:first-child {
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    padding: 15px 0;
+}
+
+.footer-row-3 {
+    padding: 10px 8px;
+    color: #eeeeee;
+    background: $anet-primary;
+    text-align: center;
+
+    @media all and (min-width: $screen-sm-min) {
+        text-align: left !important;
+
+        .push-right-on-desktop {
+            float: right;
+        }
+    }
+
+    @media print {
+        color: #000;
+        background: #FFF;
+        border-top: 1px solid gray;
+    }
+}
+
+.f_Links {
+    margin-bottom: 8px;
+    text-align: center;
+}

@@ -1,0 +1,118 @@
+﻿//Bootstrap 4 Additions/Adjustments
+
+.card {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+
+    @media print {
+        border: none;
+        display: block;
+    }
+
+    @include media-breakpoint-down(xs) {
+        border-radius: 0;
+        border-right: none;
+        border-left: none;
+
+        @media screen {
+            margin-right: -7px;
+            margin-left: -7px;
+        }
+    }
+}
+
+.card-body, .container {
+    @media print {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100% !important;
+        max-width: unset;
+    }
+}
+
+.card-body {
+    @include media-breakpoint-down(xs) {
+        padding: .5rem;
+    }
+}
+
+.table-responsive { //keeps Bootstrap tables at full-width on larger screens
+    @include media-breakpoint-up(lg) {
+        display: table;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    h1, .h1 {
+        font-size: $h1-font-size*.8;
+    }
+
+    h2, .h2 {
+        font-size: $h2-font-size*.8;
+    }
+
+    h3, .h3 {
+        font-size: $h3-font-size*.8;
+    }
+
+    h4, .h4 {
+        font-size: $h4-font-size*.8;
+    }
+
+    h5, .h5 {
+        font-size: $h5-font-size*.8;
+    }
+
+    h6, .h6 {
+        font-size: $h6-font-size*.8;
+    }
+}
+
+.no-caret::after {
+    display: none !important;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+////////// From 6.3
+
+.nav-pills > li.active > a > small, .nav-pills > li.active > a:hover > small, .nav-pills > li.active > a:focus > small {
+    color: #ffffff;
+}
+
+//Alternate padding option
+.nav-pills.nav-pad5 > li > a {
+    padding: 5px 15px;
+}
+
+@media print {
+    a[href]:after {
+        content: none;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .table-responsive {
+        overflow: hidden;
+    }
+
+    .table td, .table th {
+        background-color: transparent !important;
+    }
+
+    .flex-md-row {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+    }
+}

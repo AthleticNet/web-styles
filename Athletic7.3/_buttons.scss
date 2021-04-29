@@ -1,0 +1,84 @@
+﻿//Edit in both Athletic7.0 & 7.2 - included both places because button-variant mixins are different.
+
+.btn-default { // from Bootstrap3, too ubiquitous to lose and Bootstrap 4 did away with any good default button
+    @include button-variant(#fff, #ccc);
+}
+
+.btn-fb {
+    @include button-variant($fb-color, $fb-color);
+}
+
+.btn-admin {
+    @include button-variant($anet-admin, $anet-admin-dark);
+}
+
+// Level Buttons
+.btn-anet, .btn-sport {
+    @include button-variant($anet-primary, $anet-primary-dark);
+}
+
+.btn-tf, .TF .btn-sport {
+    @include button-variant($anet-tf-light, $anet-tf);
+}
+
+.btn-xc, .XC .btn-sport {
+    @include button-variant($anet-xc-light, $anet-xc);
+}
+
+.btn-rr, .RR .btn-sport {
+    @include button-variant($anet-rr-light, $anet-rr);
+}
+
+
+// Remove backgrounds
+.btn-outline-fb {
+    @include button-outline-variant($fb-color);
+    background-color: transparent;
+}
+
+.btn-outline-admin {
+    @include button-outline-variant($anet-admin);
+    background-color: transparent;
+}
+
+.btn-outline-anet, .btn-outline-sport {
+    @include button-outline-variant($anet-primary);
+    background-color: transparent;
+}
+
+.btn-outline-tf, .TF .btn-outline-sport {
+    @include button-outline-variant($anet-tf-light);
+    background-color: transparent;
+}
+
+.btn-outline-xc, .XC .btn-outline-sport {
+    @include button-outline-variant($anet-xc-light);
+    background-color: transparent;
+}
+
+.btn-outline-rr, .RR .btn-outline-sport {
+    @include button-outline-variant($anet-rr-light);
+    background-color: transparent;
+}
+
+//Plain text button options in addition to .btn-link provided by Bootstrap
+
+@mixin btn-link-variant($color, $hover-color, $name...) {
+    #{$name} {
+        color: $color;
+        background: transparent;
+
+        &:hover,
+        &:focus {
+            color: $hover-color;
+            text-decoration: none;
+            background: transparent;
+        }
+    }
+}
+
+@include btn-link-variant(#0275d8, #014c8c, '.btn-link-blue');
+@include btn-link-variant($anet-tf, darken($anet-tf-dark, 4%), '.btn-link-tf, .TF .btn-link-sport');
+@include btn-link-variant($anet-xc-light, $anet-xc-dark, '.btn-link-xc, .XC .btn-link-sport');
+@include btn-link-variant($anet-rr, $anet-rr, '.btn-link-rr, .RR .btn-link-sport');
+@include btn-link-variant(gray, $anet-primary-dark, '.btn-link-muted');

@@ -1,0 +1,31 @@
+﻿// Tables
+.DataTable {
+    tr > th, tr > td {
+        padding: 0 2px;
+        border-top: none !important;
+    }
+
+    @media (min-width: 768px) {
+        width: auto;
+    }
+
+    @media print {
+        font-size: 11px;
+    }
+}
+
+.table-md {
+    th, td {
+        padding: 5px;
+
+        @include media-breakpoint-down(md) {
+            padding: 8px;
+        }
+    }
+}
+
+.table-align-verticle-middle {
+    th, td {
+        vertical-align: middle;
+    }
+}

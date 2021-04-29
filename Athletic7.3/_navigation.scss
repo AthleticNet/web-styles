@@ -1,0 +1,133 @@
+﻿.nav-underline, .underline-uib-tabs .nav-tabs {
+    box-shadow: inset 0px -2px 0 0px #eee;
+    padding-bottom: 2px;
+
+    > li > a, a.nav-link {
+        border-bottom: 2px solid transparent;
+        margin-bottom: -2px;
+
+        .TF & {
+            color: $anet-tf;
+        }
+
+        .XC & {
+            color: $anet-xc;
+        }
+
+        &:hover {
+            border-bottom: 2px solid transparentize($anet-primary-light, .9);
+
+            .TF & {
+                border-bottom: 2px solid transparentize($anet-tf-light, .85);
+            }
+
+            .XC & {
+                border-bottom: 2px solid transparentize($anet-xc-light, .85);
+            }
+        }
+    }
+
+    > li.active > a, a.active {
+        border-bottom: 2px solid $anet-primary !important;
+        font-weight: bold;
+
+        .TF & {
+            border-bottom: 2px solid $anet-tf !important;
+        }
+
+        .XC & {
+            border-bottom: 2px solid $anet-xc !important;
+        }
+    }
+}
+
+.nav-in-card-block {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.nav .btn-link, .btn-nav {
+    @include border-radius($border-radius);
+    text-decoration: none !important;
+
+    &:hover {
+        background: #f0f0f0;
+    }
+
+    &:focus {
+        background: #e6e6e6;
+    }
+}
+
+// Colored Pills
+.XC .nav-pills.nav-sport .nav-link.active {
+    color: white;
+    background-color: $anet-xc;
+
+    .badge {
+        background-color: white;
+        color: $anet-xc;
+    }
+}
+
+.TF .nav-pills.nav-sport .nav-link.active {
+    color: white;
+    background-color: $anet-tf;
+
+    .badge {
+        background-color: white;
+        color: $anet-tf;
+    }
+}
+
+
+.XC .nav-sport {
+    .nav-link {
+        color: $anet-xc;
+    }
+}
+
+.TF .nav-sport {
+    .nav-link {
+        color: $anet-tf;
+    }
+}
+
+.nav-sm-scroll {
+    @include media-breakpoint-down(sm) {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+//Applied on scroll-down via Angular.element to fix navbar to top, just beneath site header. Instructions to implement are on: https://www.athletic.net/Admin/StyleGuideCSS.aspx
+.anet-scroll-to-fix {
+    @media screen {
+        box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16);
+        margin: 0 !important;
+        z-index: 99; //174
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: $header-height;
+        width: 100%;
+        background: white;
+
+        .hide-on-scroll {
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+
+        /*.container > div {
+            padding: 0 8px;
+
+            @include media-breakpoint-up(sm) {
+                padding: 0 15.5px;
+            }
+        }*/
+    }
+}
