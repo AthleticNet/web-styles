@@ -1,4 +1,6 @@
 ﻿
+@use "sass:math";
+
 .print-both-tabs { // Sets both Men and Women tab panes to 50% width for printing. Use in conjunction w/ Bootstrap print classes to show/hide the correct Titles.
     @media print {
         .tab-pane {
@@ -52,7 +54,7 @@
     @for $i from 1 through 12 { // To learn more about the @for directive: http://thesassway.com/intermediate/if-for-each-while
         .col-print-#{$i} {
             float: left;
-            width: percentage($i/12);
+            width: percentage(math.div($i, 12));
             display: block !important;
         }
     }

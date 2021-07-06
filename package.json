@@ -1,6 +1,6 @@
 {
   "name": "@athletic/web-styles",
-  "version": "1.0.2",
+  "version": "1.0.3-beta.0",
   "description": "Shared styles for AthleticNet and anet-angular repos",
   "scripts": {
     "build": "npm-run-all web:* app:* -s",
@@ -29,11 +29,11 @@
   },
   "homepage": "https://github.com/AthleticNet/web-styles#readme",
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "cssnano": "^5.0.2",
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.6",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.13",
+    "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
-    "sass": "^1.32.12"
+    "sass": "^1.35.1"
   }
 }
