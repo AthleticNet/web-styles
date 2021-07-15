@@ -20,11 +20,12 @@
       box-shadow: none !important;
     }
 
-    a {
-      &:not(.btn) {
-        text-decoration: underline;
-      }
-    }
+    // Turn of link underlines when printing as ANet is mostly links.
+    // a {
+    //   &:not(.btn) {
+    //     text-decoration: underline;
+    //   }
+    // }
 
     // Bootstrap specific; comment the following selector out
     //a[href]::after {
