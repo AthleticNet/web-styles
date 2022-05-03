@@ -1,10 +1,20 @@
-﻿//Status Colors
+﻿//Meet Status Colors
+// deprecated 5.3.2022
 .official-result {
     color: rgb(23, 202, 23);
 }
 
+// deprecated 5.3.2022
 .unofficial-result {
     color: rgb(250, 79, 79);
+}
+
+.results-in-rankings {
+    color: #17ca17;
+}
+
+.results-not-in-rankings {
+    color: #337ab7
 }
 
 // Text Colors
