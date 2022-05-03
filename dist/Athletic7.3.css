@@ -2366,10 +2366,6 @@ pre code {
   color: #999;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder {
-  color: #999;
-  opacity: 1;
-}
 .form-control::-ms-input-placeholder {
   color: #999;
   opacity: 1;
@@ -10810,7 +10806,7 @@ h3 {
 .SiteSupporterIcon {
   margin: -5px 4px 0 11px;
   padding-left: 8px;
-  border-left: 1px solid #c7c7c7;
+  border-left: 1px solid rgb(199, 199, 199);
 }
 
 #h_pageHelp {
@@ -10861,8 +10857,9 @@ h3 {
   width: 20px !important;
 }
 
+/* Only affects AngularJS blog - Angular blog is controlled by it's own scss file */
 .blog_toc {
-  background-color: #f0f0f0;
+  background-color: rgb(240, 240, 240);
   padding: 5px;
   border-radius: 4px;
 }
@@ -11539,11 +11536,19 @@ h3 {
 }
 
 .official-result {
-  color: #17ca17;
+  color: rgb(23, 202, 23);
 }
 
 .unofficial-result {
-  color: #fa4f4f;
+  color: rgb(250, 79, 79);
+}
+
+.results-in-rankings {
+  color: #17ca17;
+}
+
+.results-not-in-rankings {
+  color: #337ab7;
 }
 
 .text-anet, .text-sport {
@@ -11832,7 +11837,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
 
 .divider-line {
   margin: 7px -7px 12px;
-  border-top: 1px solid #d6d6d6;
+  border-top: 1px solid rgb(214, 214, 214);
 }
 @media print {
   .divider-line {
@@ -11886,9 +11891,9 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   background-color: #f5f5f5;
   border-radius: 4px;
   padding: 0 12px;
-  border: 1px solid #cbcbcb;
-  -webkit-box-shadow: 1px 1px 1px #e2e2e2;
-          box-shadow: 1px 1px 1px #e2e2e2;
+  border: 1px solid rgb(203, 203, 203);
+  -webkit-box-shadow: 1px 1px 1px rgb(226, 226, 226);
+          box-shadow: 1px 1px 1px rgb(226, 226, 226);
   width: 95px !important;
 }
 

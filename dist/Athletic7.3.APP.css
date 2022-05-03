@@ -1930,10 +1930,6 @@ pre code {
   color: #999;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder {
-  color: #999;
-  opacity: 1;
-}
 .form-control::-ms-input-placeholder {
   color: #999;
   opacity: 1;
@@ -10359,11 +10355,12 @@ h3 {
 .SiteSupporterIcon {
   margin: -5px 4px 0 11px;
   padding-left: 8px;
-  border-left: 1px solid #c7c7c7;
+  border-left: 1px solid rgb(199, 199, 199);
 }
 
+/* Only affects AngularJS blog - Angular blog is controlled by it's own scss file */
 .blog_toc {
-  background-color: #f0f0f0;
+  background-color: rgb(240, 240, 240);
   padding: 5px;
   border-radius: 4px;
 }
@@ -10842,11 +10839,19 @@ h3 {
 }
 
 .official-result {
-  color: #17ca17;
+  color: rgb(23, 202, 23);
 }
 
 .unofficial-result {
-  color: #fa4f4f;
+  color: rgb(250, 79, 79);
+}
+
+.results-in-rankings {
+  color: #17ca17;
+}
+
+.results-not-in-rankings {
+  color: #337ab7;
 }
 
 .text-anet, .text-sport {
