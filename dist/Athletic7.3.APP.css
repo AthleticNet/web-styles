@@ -10296,7 +10296,7 @@ h3 {
   }
 
   @page {
-    size: auto;
+    size: a3;
   }
   body {
     min-width: 992px !important;
