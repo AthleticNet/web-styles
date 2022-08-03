@@ -1,6 +1,4 @@
-﻿$print-page-size: auto; //allow users to select print layout (portrait/landscape) https://github.com/twbs/bootstrap/issues/25629#issuecomment-379000302
-
-@import "variables-anet"; //ANET non-color variables - May need updated w/ change to Bootstrap 4  //Bootstrap variable overrides go here also.
+﻿@import "variables-anet"; //ANET non-color variables - May need updated w/ change to Bootstrap 4  //Bootstrap variable overrides go here also.
 // Note that the SCSS compiler takes the value of the first time it sees a variable, not the last, excepting when the !default flag is used.
 @import "color-variables"; //ANET custom color variables
 @import "mixins";
