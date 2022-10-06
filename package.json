@@ -1,15 +1,15 @@
 {
   "name": "@athletic/web-styles",
-  "version": "1.0.8",
+  "version": "7.3.0",
   "description": "Shared styles for AthleticNet and anet-angular repos",
   "scripts": {
     "build": "npm-run-all web:* app:* -s",
-    "web:compile": "sass Athletic7.3/Athletic7.3.scss:dist/Athletic7.3.css --no-source-map",
-    "web:autoprefix": "postcss dist/Athletic7.3.css --replace --use autoprefixer --no-map",
-    "web:minify": "postcss dist/Athletic7.3.css --output dist/Athletic7.3.min.css --use cssnano --no-map",
-    "app:compile": "sass Athletic7.3/Athletic7.3.APP.scss:dist/Athletic7.3.APP.css --no-source-map",
-    "app:autoprefix": "postcss dist/Athletic7.3.APP.css --replace --use autoprefixer --no-map",
-    "app:minify": "postcss dist/Athletic7.3.APP.css --output dist/Athletic7.3.APP.min.css --use cssnano --no-map",
+    "web:compile": "sass src/Athletic.scss:dist/Athletic.css --no-source-map",
+    "web:autoprefix": "postcss dist/Athletic.css --replace --use autoprefixer --no-map",
+    "web:minify": "postcss dist/Athletic.css --output dist/Athletic.min.css --use cssnano --no-map",
+    "app:compile": "sass src/Athletic.APP.scss:dist/Athletic.APP.css --no-source-map",
+    "app:autoprefix": "postcss dist/Athletic.APP.css --replace --use autoprefixer --no-map",
+    "app:minify": "postcss dist/Athletic.APP.css --output dist/Athletic.APP.min.css --use cssnano --no-map",
     "patch": "npm version patch"
   },
   "browserslist": [
