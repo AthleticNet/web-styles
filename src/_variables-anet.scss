@@ -11,6 +11,7 @@ $pin-side-menu-min-width: $side-menu-width + $dashboard-max-width; // Used on Da
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 $link-color: #8B0000; //$brand-primary !default
+$link-decoration: none; //underline !default;
 
 $container-max-widths: (
   sm: 560px,

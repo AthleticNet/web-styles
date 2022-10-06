@@ -18,38 +18,119 @@
 }
 
 // Text Colors
-@include text-emphasis-variant('.text-anet, .text-sport', $anet-primary);
-@include text-emphasis-variant('.text-tf, .TF .text-sport', $anet-tf);
-@include text-emphasis-variant('.text-xc, .XC .text-sport', $anet-xc);
-@include text-emphasis-variant('.text-rr, .RR .text-sport', $anet-rr);
+.text-anet, .text-sport {
+    color: #770400 !important;
+  }
+  
+  a.text-anet:hover, a.text-anet:focus, .text-sport:hover, .text-sport:focus {
+    color: #2b0100 !important;
+  }
+  
+  .text-tf, .TF .text-sport {
+    color: #31537a !important;
+  }
+  
+  a.text-tf:hover, a.text-tf:focus, .TF .text-sport:hover, .TF .text-sport:focus {
+    color: #1b2e43 !important;
+  }
+  
+  .text-xc, .XC .text-sport {
+    color: #374f3f !important;
+  }
+  
+  a.text-xc:hover, a.text-xc:focus, .XC .text-sport:hover, .XC .text-sport:focus {
+    color: #18221b !important;
+  }
+  
+  .text-rr, .RR .text-sport {
+    color: #59415e !important;
+  }
+  
+  a.text-rr:hover, a.text-rr:focus, .RR .text-sport:hover, .RR .text-sport:focus {
+    color: #2e2231 !important;
+  }
+  
+  .badge-tf, .TF .badge-sport {
+    color: #fff;
+    background-color: #31537a;
+  }
+  a.badge-tf:hover, a.badge-tf:focus, .TF .badge-sport:hover, .TF .badge-sport:focus {
+    color: #fff;
+    background-color: #223a56;
+  }
+  a.badge-tf:focus, a.badge-tf.focus, .TF .badge-sport:focus, .TF .badge-sport.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(49, 83, 122, 0.5);
+            box-shadow: 0 0 0 0.2rem rgba(49, 83, 122, 0.5);
+  }
+  
+  .badge-xc, .XC .badge-sport {
+    color: #fff;
+    background-color: #374f3f;
+  }
+  a.badge-xc:hover, a.badge-xc:focus, .XC .badge-sport:hover, .XC .badge-sport:focus {
+    color: #fff;
+    background-color: #223127;
+  }
+  a.badge-xc:focus, a.badge-xc.focus, .XC .badge-sport:focus, .XC .badge-sport.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(55, 79, 63, 0.5);
+            box-shadow: 0 0 0 0.2rem rgba(55, 79, 63, 0.5);
+  }
+  
+  .badge-rr, .RR .badge-sport {
+    color: #fff;
+    background-color: #59415e;
+  }
+  a.badge-rr:hover, a.badge-rr:focus, .RR .badge-sport:hover, .RR .badge-sport:focus {
+    color: #fff;
+    background-color: #3c2c40;
+  }
+  a.badge-rr:focus, a.badge-rr.focus, .RR .badge-sport:focus, .RR .badge-sport.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(89, 65, 94, 0.5);
+            box-shadow: 0 0 0 0.2rem rgba(89, 65, 94, 0.5);
+  }
+  
+  .badge-sport, .badge-anet {
+    color: #fff;
+    background-color: #770400;
+  }
+  a.badge-sport:hover, a.badge-sport:focus, .badge-anet:hover, .badge-anet:focus {
+    color: #fff;
+    background-color: #440200;
+  }
+  a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(119, 4, 0, 0.5);
+            box-shadow: 0 0 0 0.2rem rgba(119, 4, 0, 0.5);
+  }
 
 // Badge Colors
-.badge-tf, .TF .badge-sport {
-    @include badge-variant($anet-tf);
-}
-
-.badge-xc, .XC .badge-sport {
-    @include badge-variant($anet-xc);
-}
-
-.badge-rr, .RR .badge-sport {
-    @include badge-variant($anet-rr);
-}
-
-.badge-sport, .badge-anet {
-    @include badge-variant($anet-primary);
-}
+// TODO, refactor badge-* to bg-* 
 
 //  TF COLORS
 .TF {
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: $anet-tf-dark;
     }
 }
 
 //  XC COLORS
 .XC {
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: $anet-xc-dark;
     }
 }
@@ -57,7 +138,13 @@
 // RR Colors
 
 .RR {
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: $anet-rr-dark;
     }
 }
@@ -67,16 +154,20 @@
     background-color: $anet-primary;
 }
 
-.TF .bg-sport, .bg-tf, .TF .progress-bar {
+.TF .bg-sport,
+.bg-tf,
+.TF .progress-bar {
     background-color: $anet-tf;
 }
 
-.XC .bg-sport, .bg-xc, .XC .progress-bar {
+.XC .bg-sport,
+.bg-xc,
+.XC .progress-bar {
     background-color: $anet-xc;
 }
 
-.RR .bg-sport, .bg-rr, .RR .progress-bar {
+.RR .bg-sport,
+.bg-rr,
+.RR .progress-bar {
     background-color: $anet-rr;
 }
-
-
