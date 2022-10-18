@@ -12835,7 +12835,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
 .table-md th, .table-md td {
   padding: 5px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .table-md th, .table-md td {
     padding: 8px;
   }
@@ -12881,7 +12881,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
     display: none;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .anet-2Column-tabs h3, .anet-2Column-tabs .h3 {
     display: none;
   }
@@ -12965,9 +12965,6 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
 .card {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  border-radius: 0;
-  border-right: none;
-  border-left: none;
 }
 @media print {
   .card {
@@ -12975,7 +12972,14 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
     display: block;
   }
 }
-@media screen {
+@media (max-width: 575.98px) {
+  .card {
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+  }
+}
+@media screen and (max-width: 575.98px) {
   .card {
     margin-right: -7px;
     margin-left: -7px;
@@ -12991,8 +12995,10 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   }
 }
 
-.card-body {
-  padding: 0.5rem;
+@media (max-width: 575.98px) {
+  .card-body {
+    padding: 0.5rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -13001,7 +13007,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   h1, .h1 {
     font-size: 2rem;
   }
@@ -13142,7 +13148,7 @@ a:visited {
   color: #31537a;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .nav-sm-scroll {
     overflow-x: auto;
     overflow-y: hidden;
@@ -13171,7 +13177,7 @@ a:visited {
     }*/
   }
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
   .anet-scroll-to-fix .hide-on-scroll {
     display: none;
   }

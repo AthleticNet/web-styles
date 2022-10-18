@@ -11848,7 +11848,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
 .table-md th, .table-md td {
   padding: 5px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .table-md th, .table-md td {
     padding: 8px;
   }
@@ -11877,7 +11877,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
     display: none;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .anet-2Column-tabs h3 {
     display: none;
   }
@@ -12037,7 +12037,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   color: #31537a;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .nav-sm-scroll {
     overflow-x: auto;
     overflow-y: hidden;
@@ -12066,7 +12066,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
     }*/
   }
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
   .anet-scroll-to-fix .hide-on-scroll {
     display: none;
   }

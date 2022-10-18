@@ -8,7 +8,7 @@
         display: block;
     }
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
         border-radius: 0;
         border-right: none;
         border-left: none;
@@ -30,7 +30,7 @@
 }
 
 .card-body {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
         padding: .5rem;
     }
 }
@@ -41,7 +41,7 @@
     }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
     h1, .h1 {
         font-size: $h1-font-size*.8;
     }

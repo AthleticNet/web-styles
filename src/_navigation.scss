@@ -96,7 +96,7 @@
 }
 
 .nav-sm-scroll {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
@@ -117,7 +117,7 @@
         background: white;
 
         .hide-on-scroll {
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 display: none;
             }
         }
