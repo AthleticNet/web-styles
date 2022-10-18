@@ -1,59 +1,59 @@
 ﻿// Custom checkbox colors
-.custom-control-input {
-    ~ .custom-control-label::before {
+.form-check-input {
+    ~ .form-check-label::before {
         background-color: #fff;
         border: 1px solid #007bff;
     }
 
-    &:checked ~ .custom-control-label::before, &:active ~ .custom-control-label::before {
+    &:checked ~ .form-check-label::before, &:active ~ .form-check-label::before {
         background-color: #007bff;
     }
 
-    &:focus ~ .custom-control-label::before {
+    &:focus ~ .form-check-label::before {
         box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #007bff;
     }
 
-    &:disabled ~ .custom-control-label::before {
+    &:disabled ~ .form-check-label::before {
         background-color: #eaeaea;
         border: none;
     }
 }
 
-.TF .custom-control-input {
-    ~ .custom-control-label::before {
+.TF .form-check-input {
+    ~ .form-check-label::before {
         background-color: #fff;
         border: 1px solid $anet-tf;
     }
 
-    &:checked ~ .custom-control-label::before, &:active ~ .custom-control-label::before {
+    &:checked ~ .form-check-label::before, &:active ~ .form-check-label::before {
         background-color: $anet-tf;
     }
 
-    &:focus ~ .custom-control-label::before {
+    &:focus ~ .form-check-label::before {
         box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $anet-tf;
     }
 
-    &:disabled ~ .custom-control-label::before {
+    &:disabled ~ .form-check-label::before {
         background-color: #eaeaea;
         border: none;
     }
 }
 
-.XC .custom-control-input {
-    ~ .custom-control-label::before {
+.XC .form-check-input {
+    ~ .form-check-label::before {
         background-color: #fff;
         border: 1px solid $anet-xc;
     }
 
-    &:checked ~ .custom-control-label::before, &:active ~ .custom-control-label::before {
+    &:checked ~ .form-check-label::before, &:active ~ .form-check-label::before {
         background-color: $anet-xc;
     }
 
-    &:focus ~ .custom-control-label::before {
+    &:focus ~ .form-check-label::before {
         box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $anet-xc;
     }
 
-    &:disabled ~ .custom-control-label::before {
+    &:disabled ~ .form-check-label::before {
         background-color: #eaeaea;
         border: none;
     }
