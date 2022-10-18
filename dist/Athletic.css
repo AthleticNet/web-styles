@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*!
 * Bootstrap v5.2.2 (https://getbootstrap.com/)
-* Copyright 2011-2020 The Bootstrap Authors
-* Copyright 2011-2020 Twitter, Inc.
+* Copyright 2011-2022 The Bootstrap Authors
+* Copyright 2011-2022 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+*/
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -12578,50 +12578,50 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   background-color: #59415e;
 }
 
-.custom-control-input ~ .custom-control-label::before {
+.form-check-input ~ .form-check-label::before {
   background-color: #fff;
   border: 1px solid #007bff;
 }
-.custom-control-input:checked ~ .custom-control-label::before, .custom-control-input:active ~ .custom-control-label::before {
+.form-check-input:checked ~ .form-check-label::before, .form-check-input:active ~ .form-check-label::before {
   background-color: #007bff;
 }
-.custom-control-input:focus ~ .custom-control-label::before {
+.form-check-input:focus ~ .form-check-label::before {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #007bff;
           box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #007bff;
 }
-.custom-control-input:disabled ~ .custom-control-label::before {
+.form-check-input:disabled ~ .form-check-label::before {
   background-color: #eaeaea;
   border: none;
 }
 
-.TF .custom-control-input ~ .custom-control-label::before {
+.TF .form-check-input ~ .form-check-label::before {
   background-color: #fff;
   border: 1px solid #31537a;
 }
-.TF .custom-control-input:checked ~ .custom-control-label::before, .TF .custom-control-input:active ~ .custom-control-label::before {
+.TF .form-check-input:checked ~ .form-check-label::before, .TF .form-check-input:active ~ .form-check-label::before {
   background-color: #31537a;
 }
-.TF .custom-control-input:focus ~ .custom-control-label::before {
+.TF .form-check-input:focus ~ .form-check-label::before {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #31537a;
           box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #31537a;
 }
-.TF .custom-control-input:disabled ~ .custom-control-label::before {
+.TF .form-check-input:disabled ~ .form-check-label::before {
   background-color: #eaeaea;
   border: none;
 }
 
-.XC .custom-control-input ~ .custom-control-label::before {
+.XC .form-check-input ~ .form-check-label::before {
   background-color: #fff;
   border: 1px solid #374f3f;
 }
-.XC .custom-control-input:checked ~ .custom-control-label::before, .XC .custom-control-input:active ~ .custom-control-label::before {
+.XC .form-check-input:checked ~ .form-check-label::before, .XC .form-check-input:active ~ .form-check-label::before {
   background-color: #374f3f;
 }
-.XC .custom-control-input:focus ~ .custom-control-label::before {
+.XC .form-check-input:focus ~ .form-check-label::before {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #374f3f;
           box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #374f3f;
 }
-.XC .custom-control-input:disabled ~ .custom-control-label::before {
+.XC .form-check-input:disabled ~ .form-check-label::before {
   background-color: #eaeaea;
   border: none;
 }
