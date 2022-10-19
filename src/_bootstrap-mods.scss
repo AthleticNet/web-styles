@@ -36,6 +36,7 @@
 }
 
 .table-responsive { //keeps Bootstrap tables at full-width on larger screens
+    width: 100%;
     @include media-breakpoint-up(lg) {
         display: table;
     }
