@@ -12823,7 +12823,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
 }
 @media (min-width: 768px) {
   .DataTable {
-    width: auto;
+    width: auto !important;
   }
 }
 @media print {
@@ -12843,6 +12843,10 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
 
 .table-align-verticle-middle th, .table-align-verticle-middle td {
   vertical-align: middle;
+}
+
+.table.table-no-extra-padding > :not(caption) > * > * {
+  padding: 0;
 }
 
 .page-header {
