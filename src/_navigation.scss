@@ -67,7 +67,7 @@
     background-color: $anet-xc;
 
     .badge {
-        background-color: white;
+        background-color: white !important;
         color: $anet-xc;
     }
 }
@@ -77,7 +77,7 @@
     background-color: $anet-tf;
 
     .badge {
-        background-color: white;
+        background-color: white !important;
         color: $anet-tf;
     }
 }
