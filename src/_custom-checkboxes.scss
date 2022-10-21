@@ -1,60 +1,54 @@
 ﻿// Custom checkbox colors
 .form-check-input {
-    ~ .form-check-label::before {
-        background-color: #fff;
-        border: 1px solid #007bff;
-    }
+  background-color: #fff;
+  border: 1px solid #007bff;
 
-    &:checked ~ .form-check-label::before, &:active ~ .form-check-label::before {
-        background-color: #007bff;
-    }
+  &:focus {
+      border-color: #007bff;
+  }
 
-    &:focus ~ .form-check-label::before {
-        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #007bff;
-    }
+  &:checked {
+      background-color: #007bff;
+  }
 
-    &:disabled ~ .form-check-label::before {
-        background-color: #eaeaea;
-        border: none;
-    }
+  &:disabled {
+      background-color: #eaeaea;
+      border: none;
+  }
 }
 
 .TF .form-check-input {
-    ~ .form-check-label::before {
-        background-color: #fff;
-        border: 1px solid $anet-tf;
-    }
+  background-color: #fff;
+  border: 1px solid $anet-tf;
 
-    &:checked ~ .form-check-label::before, &:active ~ .form-check-label::before {
-        background-color: $anet-tf;
-    }
+  &:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $anet-tf;
+  }
 
-    &:focus ~ .form-check-label::before {
-        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $anet-tf;
-    }
+  &:checked {
+    background-color: $anet-tf;
+  }
 
-    &:disabled ~ .form-check-label::before {
-        background-color: #eaeaea;
-        border: none;
-    }
+  &:disabled {
+    background-color: #eaeaea;
+    border: none;
+  }
 }
 
 .XC .form-check-input {
-    ~ .form-check-label::before {
-        background-color: #fff;
-        border: 1px solid $anet-xc;
-    }
+  background-color: #fff;
+  border: 1px solid $anet-xc;
 
-    &:checked ~ .form-check-label::before, &:active ~ .form-check-label::before {
-        background-color: $anet-xc;
-    }
+  &:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $anet-xc;
+  }
 
-    &:focus ~ .form-check-label::before {
-        box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $anet-xc;
-    }
+  &:checked {
+    background-color: $anet-xc;
+  }
 
-    &:disabled ~ .form-check-label::before {
-        background-color: #eaeaea;
-        border: none;
-    }
+  &:disabled {
+    background-color: #eaeaea;
+    border: none;
+  }
 }
