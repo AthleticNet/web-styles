@@ -11782,56 +11782,55 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   background-color: #59415e;
 }
 
-.form-check-input ~ .form-check-label::before {
+.form-check-input {
   background-color: #fff;
   border: 1px solid #007bff;
 }
-.form-check-input:checked ~ .form-check-label::before, .form-check-input:active ~ .form-check-label::before {
+.form-check-input:focus {
+  border-color: #007bff;
+}
+.form-check-input:checked {
   background-color: #007bff;
 }
-.form-check-input:focus ~ .form-check-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #007bff;
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #007bff;
-}
-.form-check-input:disabled ~ .form-check-label::before {
+.form-check-input:disabled {
   background-color: #eaeaea;
   border: none;
 }
 
-.TF .form-check-input ~ .form-check-label::before {
+.TF .form-check-input {
   background-color: #fff;
   border: 1px solid #31537a;
 }
-.TF .form-check-input:checked ~ .form-check-label::before, .TF .form-check-input:active ~ .form-check-label::before {
-  background-color: #31537a;
-}
-.TF .form-check-input:focus ~ .form-check-label::before {
+.TF .form-check-input:focus {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #31537a;
           box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #31537a;
 }
-.TF .form-check-input:disabled ~ .form-check-label::before {
+.TF .form-check-input:checked {
+  background-color: #31537a;
+}
+.TF .form-check-input:disabled {
   background-color: #eaeaea;
   border: none;
 }
 
-.XC .form-check-input ~ .form-check-label::before {
+.XC .form-check-input {
   background-color: #fff;
   border: 1px solid #374f3f;
 }
-.XC .form-check-input:checked ~ .form-check-label::before, .XC .form-check-input:active ~ .form-check-label::before {
-  background-color: #374f3f;
-}
-.XC .form-check-input:focus ~ .form-check-label::before {
+.XC .form-check-input:focus {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #374f3f;
           box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #374f3f;
 }
-.XC .form-check-input:disabled ~ .form-check-label::before {
+.XC .form-check-input:checked {
+  background-color: #374f3f;
+}
+.XC .form-check-input:disabled {
   background-color: #eaeaea;
   border: none;
 }
 
 .DataTable tr > th, .DataTable tr > td {
-  padding: 0 2px;
+  padding: 0 2px !important;
   border-top: none !important;
 }
 @media (min-width: 768px) {
