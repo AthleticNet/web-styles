@@ -11782,49 +11782,49 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   background-color: #59415e;
 }
 
-.form-check-input {
+.form-check-input, .XC .ignore-sport .form-check-input, .TF .ignore-sport .form-check-input {
   background-color: #fff;
   border: 1px solid #007bff;
 }
-.form-check-input:focus {
+.form-check-input:focus, .XC .ignore-sport .form-check-input:focus, .TF .ignore-sport .form-check-input:focus {
   border-color: #007bff;
 }
-.form-check-input:checked {
+.form-check-input:checked, .XC .ignore-sport .form-check-input:checked, .TF .ignore-sport .form-check-input:checked {
   background-color: #007bff;
 }
-.form-check-input:disabled {
+.form-check-input:disabled, .XC .ignore-sport .form-check-input:disabled, .TF .ignore-sport .form-check-input:disabled {
   background-color: #eaeaea;
   border: none;
 }
 
-.TF .form-check-input {
+.TF .form-check-input, .XC .TF .form-check-input {
   background-color: #fff;
   border: 1px solid #31537a;
 }
-.TF .form-check-input:focus {
+.TF .form-check-input:focus, .XC .TF .form-check-input:focus {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #31537a;
           box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #31537a;
 }
-.TF .form-check-input:checked {
+.TF .form-check-input:checked, .XC .TF .form-check-input:checked {
   background-color: #31537a;
 }
-.TF .form-check-input:disabled {
+.TF .form-check-input:disabled, .XC .TF .form-check-input:disabled {
   background-color: #eaeaea;
   border: none;
 }
 
-.XC .form-check-input {
+.XC .form-check-input, .TF .XC .form-check-input {
   background-color: #fff;
   border: 1px solid #374f3f;
 }
-.XC .form-check-input:focus {
+.XC .form-check-input:focus, .TF .XC .form-check-input:focus {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #374f3f;
           box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #374f3f;
 }
-.XC .form-check-input:checked {
+.XC .form-check-input:checked, .TF .XC .form-check-input:checked {
   background-color: #374f3f;
 }
-.XC .form-check-input:disabled {
+.XC .form-check-input:disabled, .TF .XC .form-check-input:disabled {
   background-color: #eaeaea;
   border: none;
 }
