@@ -33,32 +33,26 @@
 // Remove backgrounds
 .btn-outline-fb {
     @include button-outline-variant($fb-color);
-    background-color: transparent;
 }
 
 .btn-outline-admin {
     @include button-outline-variant($anet-admin);
-    background-color: transparent;
 }
 
 .btn-outline-anet, .btn-outline-sport {
     @include button-outline-variant($anet-primary);
-    background-color: transparent;
 }
 
 .btn-outline-tf, .TF .btn-outline-sport {
     @include button-outline-variant($anet-tf-light);
-    background-color: transparent;
 }
 
 .btn-outline-xc, .XC .btn-outline-sport {
     @include button-outline-variant($anet-xc-light);
-    background-color: transparent;
 }
 
 .btn-outline-rr, .RR .btn-outline-sport {
     @include button-outline-variant($anet-rr-light);
-    background-color: transparent;
 }
 
 //Plain text button options in addition to .btn-link provided by Bootstrap

@@ -14,6 +14,7 @@ Shared Bootstrap 5 + in-house styles for AthleticNet and anet-angular repos
 
 1. Make changes, run `npm run build`, compare the diffs in the outputted css, then commit
 2. Run `npm run patch` (this will bump from 8.0.2 to 8.0.3 for example and then commit the changes), and push changes to GitHub which will automatically fire off an NPM publish
+3. `git push --tags`
 
 ## To Discuss
 - Do we want to authorize Gitpod w/ AthleticNet organization if wanting to do easy devving via Gitpod

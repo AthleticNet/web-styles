@@ -11478,7 +11478,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #4267b2;
   --bs-gradient: none;
-  background-color: transparent;
 }
 
 .btn-outline-admin {
@@ -11496,7 +11495,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #a70950;
   --bs-gradient: none;
-  background-color: transparent;
 }
 
 .btn-outline-anet, .btn-outline-sport {
@@ -11514,7 +11512,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #770400;
   --bs-gradient: none;
-  background-color: transparent;
 }
 
 .btn-outline-tf, .TF .btn-outline-sport {
@@ -11532,7 +11529,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #3f6b9d;
   --bs-gradient: none;
-  background-color: transparent;
 }
 
 .btn-outline-xc, .XC .btn-outline-sport {
@@ -11550,7 +11546,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #4b6c56;
   --bs-gradient: none;
-  background-color: transparent;
 }
 
 .btn-outline-rr, .RR .btn-outline-sport {
@@ -11568,7 +11563,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #74557b;
   --bs-gradient: none;
-  background-color: transparent;
 }
 
 .btn-link-blue {
