@@ -1,5 +1,5 @@
 ﻿// Custom checkbox colors
-.form-check-input {
+.form-check-input, .XC .ignore-sport .form-check-input, .TF .ignore-sport .form-check-input {
   background-color: #fff;
   border: 1px solid #007bff;
 
@@ -17,7 +17,7 @@
   }
 }
 
-.TF .form-check-input {
+.TF .form-check-input, .XC .TF .form-check-input {
   background-color: #fff;
   border: 1px solid $anet-tf;
 
@@ -35,7 +35,7 @@
   }
 }
 
-.XC .form-check-input {
+.XC .form-check-input, .TF .XC .form-check-input {
   background-color: #fff;
   border: 1px solid $anet-xc;
 
