@@ -12,6 +12,7 @@ $pin-side-menu-min-width: $side-menu-width + $dashboard-max-width; // Used on Da
 // without modifying source files.
 $link-color: #8B0000; //$brand-primary !default
 $link-decoration: none; //underline !default;
+$info: #17a2b8;  // use the bs4 color, v5 was too bright
 
 $container-max-widths: (
   sm: 560px,
