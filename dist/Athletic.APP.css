@@ -11966,6 +11966,112 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
     display: block !important;
   }
 }
+.card {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+@media print {
+  .card {
+    border: none;
+    display: block;
+  }
+}
+@media (max-width: 575.98px) {
+  .card {
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .card {
+    margin-right: -7px;
+    margin-left: -7px;
+  }
+}
+
+@media print {
+  .card-body, .container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100% !important;
+    max-width: unset;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-body {
+    padding: 0.5rem;
+  }
+}
+
+.table-responsive {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .table-responsive {
+    display: table;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1, .h1 {
+    font-size: 2rem;
+  }
+  h2, .h2 {
+    font-size: 1.6rem;
+  }
+  h3, .h3 {
+    font-size: 1.4rem;
+  }
+  h4, .h4 {
+    font-size: 1.2rem;
+  }
+  h5, .h5 {
+    font-size: 1rem;
+  }
+  h6, .h6 {
+    font-size: 0.8rem;
+  }
+}
+.no-caret::after {
+  display: none !important;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.nav-pills > li.active > a > small, .nav-pills > li.active > a:hover > small, .nav-pills > li.active > a:focus > small {
+  color: #ffffff;
+}
+
+.nav-pills.nav-pad5 > li > a {
+  padding: 5px 15px;
+}
+
+@media print {
+  a[href]:after {
+    content: none;
+  }
+  a,
+a:visited {
+    text-decoration: none;
+    color: #000;
+  }
+  .table-responsive {
+    overflow: hidden;
+  }
+  .table td, .table th {
+    background-color: transparent !important;
+  }
+  .flex-md-row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+}
 .nav-underline, .underline-uib-tabs .nav-tabs {
   -webkit-box-shadow: inset 0px -2px 0 0px #eee;
           box-shadow: inset 0px -2px 0 0px #eee;
