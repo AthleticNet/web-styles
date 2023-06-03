@@ -12656,6 +12656,7 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
 }
 @media print {
   #body {
+    background-color: white;
     display: block;
     padding: 0 !important;
     margin: 0 !important;
