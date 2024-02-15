@@ -1,7 +1,6 @@
 /*!
-* Bootstrap v5.2.2 (https://getbootstrap.com/)
-* Copyright 2011-2022 The Bootstrap Authors
-* Copyright 2011-2022 Twitter, Inc.
+* Bootstrap v5.3.2 (https://getbootstrap.com/)
+* Copyright 2011-2023 The Bootstrap Authors
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
 */
 
@@ -9,47 +8,47 @@
  @import "site-dependencies";
 
 
-// Bootstrap 5.2.2
+// Bootstrap 5.3.2
 
 // Layout & components
-@import "bootstrap-5.2.2/root";
-@import "bootstrap-5.2.2/reboot";
-@import "bootstrap-5.2.2/type";
-@import "bootstrap-5.2.2/images";
-@import "bootstrap-5.2.2/containers";
-@import "bootstrap-5.2.2/grid";
-@import "bootstrap-5.2.2/tables";
-@import "bootstrap-5.2.2/forms";
-@import "bootstrap-5.2.2/buttons";
-@import "bootstrap-5.2.2/transitions";
-@import "bootstrap-5.2.2/dropdown";
-@import "bootstrap-5.2.2/button-group";
-@import "bootstrap-5.2.2/nav";
-@import "bootstrap-5.2.2/navbar";
-@import "bootstrap-5.2.2/card";
-@import "bootstrap-5.2.2/accordion";
-// @import "bootstrap-5.2.2/breadcrumb";
-@import "bootstrap-5.2.2/pagination";
-@import "bootstrap-5.2.2/badge";
-@import "bootstrap-5.2.2/alert";
-@import "bootstrap-5.2.2/progress";
-@import "bootstrap-5.2.2/list-group";
-@import "bootstrap-5.2.2/close";
-@import "bootstrap-5.2.2/toasts";
-@import "bootstrap-5.2.2/modal";
-@import "bootstrap-5.2.2/tooltip";
-@import "bootstrap-5.2.2/popover";
-// @import "bootstrap-5.2.2/carousel";
-@import "bootstrap-5.2.2/spinners";
-@import "bootstrap-5.2.2/offcanvas";
-@import "bootstrap-5.2.2/placeholders";
+@import "scss/root";
+@import "scss/reboot";
+@import "scss/type";
+@import "scss/images";
+@import "scss/containers";
+@import "scss/grid";
+@import "scss/tables";
+@import "scss/forms";
+@import "scss/buttons";
+@import "scss/transitions";
+@import "scss/dropdown";
+@import "scss/button-group";
+@import "scss/nav";
+@import "scss/navbar";
+@import "scss/card";
+@import "scss/accordion";
+// @import "scss/breadcrumb";
+@import "scss/pagination";
+@import "scss/badge";
+@import "scss/alert";
+@import "scss/progress";
+@import "scss/list-group";
+@import "scss/close";
+@import "scss/toasts";
+@import "scss/modal";
+@import "scss/tooltip";
+@import "scss/popover";
+// @import "scss/carousel";
+@import "scss/spinners";
+@import "scss/offcanvas";
+@import "scss/placeholders";
 
 // Helpers
-@import "bootstrap-5.2.2/helpers";
+@import "scss/helpers";
 
 // Utilities
-@import "bootstrap-5.2.2/utilities/api";
-
+@import "scss/utilities/api";
+// scss-docs-end import-stack
 
 // ANET Styles
 @import "ads";

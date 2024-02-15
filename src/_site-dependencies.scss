@@ -4,11 +4,12 @@
 @import "mixins";
 
 // Configuration
-@import "bootstrap-5.2.2/functions";
-@import "bootstrap-5.2.2/variables";
-@import "bootstrap-5.2.2/maps";
-@import "bootstrap-5.2.2/mixins";
-@import "bootstrap-5.2.2/utilities";
+@import "scss/functions";
+@import "scss/variables";
+@import "scss/variables-dark";
+@import "scss/maps";
+@import "scss/mixins";
+@import "scss/utilities";
 
 // Backwards Compatibility for pages referencing the old 7.0 Site Dependencies which rested on Bootstrap 4 alpha variables
 $table-bg-accent: $table-accent-bg;
