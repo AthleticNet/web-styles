@@ -13772,6 +13772,15 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   background-color: #59415e;
 }
 
+.bg-gender.M, .bg-gender.m {
+  color: white;
+  background-color: rgb(0, 146, 231) !important;
+}
+.bg-gender.F, .bg-gender.f {
+  color: white;
+  background-color: rgb(255, 163, 179) !important;
+}
+
 .form-check-input, .XC .ignore-sport .form-check-input, .TF .ignore-sport .form-check-input {
   background-color: #fff;
   border: 1px solid #007bff;
