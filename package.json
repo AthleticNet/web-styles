@@ -1,6 +1,6 @@
 {
   "name": "@athletic/web-styles",
-  "version": "9.0.4",
+  "version": "9.0.5",
   "description": "Shared styles for AthleticNet and anet-angular repos",
   "scripts": {
     "build": "npm-run-all web:* app:* -s",
