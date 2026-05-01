@@ -13841,6 +13841,9 @@ a.badge-sport:focus, a.badge-sport.focus, .badge-anet:focus, .badge-anet.focus {
   height: 100%;
   min-height: 100vh;
 }
+html.Modal #body {
+  padding-top: 0px !important;
+}
 @media (max-width: 575px) {
   #body {
     padding-bottom: 62px;

@@ -12,6 +12,11 @@
     height: 100%;
     min-height: 100vh;
 
+    // allows Site.Master to display as a 'modal' or full-page view without the header 
+    html.Modal & {
+        padding-top: 0px !important;
+    }
+
     @media (max-width: 575px) {
         padding-bottom: $header-height + 6px;
     }
