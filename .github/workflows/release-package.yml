@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
 
       # Not automatically building so we have a chance to compare the diffs before deploying
       # - run: npm ci
@@ -26,10 +26,3 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: "public"
-
-      - name: Send notification to CSS channel in Teams
-        if: steps.publish.outputs.type != 'none'
-        uses: dhollerbach/github-action-send-message-to-ms-teams@1.0.10
-        with:
-          webhook: ${{ secrets.TEAMS_CSS_CHANNEL_WEBHOOK }}
-          message: "web-styles version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
